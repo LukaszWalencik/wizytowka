@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/getwidget.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+String _url = 'https://flutter.dev';
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Wizytówka',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -29,6 +32,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
+                    radius: 100,
                     backgroundImage: AssetImage('images/tlo'),
                   ),
                   SizedBox(height: 20),
@@ -40,6 +44,60 @@ class MyApp extends StatelessWidget {
                   Text(
                     'Junior Flutter Developer',
                     style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Social Media',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.twitter),
+                      ),
+                      GFIconButton(
+                          onPressed: () {},
+                          icon: Icon(FontAwesomeIcons.facebook,
+                              color: Colors.white, size: 25.0)),
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.linkedin),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Contact',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.at),
+                      ),
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.phone),
+                      ),
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.sms),
+                      ),
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.whatsapp),
+                      ),
+                      GFIconButton(
+                        onPressed: () {},
+                        icon: Icon(FontAwesomeIcons.facebookMessenger),
+                      ),
+                    ],
                   ),
                 ],
               ),
