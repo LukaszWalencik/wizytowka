@@ -46,7 +46,7 @@ class ContactIcons extends StatelessWidget {
         ),
         Ink(
           decoration: const ShapeDecoration(
-            color: Colors.blue,
+            color: Colors.blueAccent,
             shape: CircleBorder(),
           ),
           child: IconButton(

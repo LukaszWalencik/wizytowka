@@ -11,17 +11,38 @@ class SocialMediaIcons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(FontAwesomeIcons.twitter),
-        ),
-        IconButton(
+        Ink(
+          decoration: const ShapeDecoration(
+            color: Colors.lightBlueAccent,
+            shape: CircleBorder(),
+          ),
+          child: IconButton(
+            color: Colors.white,
             onPressed: () {},
-            icon: Icon(FontAwesomeIcons.facebook,
-                color: Colors.white, size: 25.0)),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(FontAwesomeIcons.linkedin),
+            icon: Icon(FontAwesomeIcons.twitter),
+          ),
+        ),
+        Ink(
+          decoration: const ShapeDecoration(
+            color: Colors.indigo,
+            shape: CircleBorder(),
+          ),
+          child: IconButton(
+            color: Colors.white,
+            onPressed: () {},
+            icon: Icon(FontAwesomeIcons.facebook),
+          ),
+        ),
+        Ink(
+          decoration: const ShapeDecoration(
+            color: Colors.blueAccent,
+            shape: CircleBorder(),
+          ),
+          child: IconButton(
+            color: Colors.white,
+            onPressed: () {},
+            icon: Icon(FontAwesomeIcons.linkedin),
+          ),
         ),
       ],
     );
