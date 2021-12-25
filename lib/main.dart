@@ -24,37 +24,46 @@ class MyApp extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 100,
-                  backgroundImage: AssetImage('images/tlo'),
+                  backgroundImage: AssetImage('images/avatar2.jpg'),
                 ),
                 SizedBox(height: 20),
                 Text(
                   'Łukasz Walencik',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 20),
                 Text(
                   'Junior Flutter Developer',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                      fontFamily: 'Vujahday',
+                      fontSize: 18,
+                      color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 Text(
                   'Social Media',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 SocialMediaIcons(),
                 SizedBox(height: 20),
                 Text(
                   'Contact',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 ContactIcons(),
+                SizedBox(height: 20),
                 TextButton(
                   onPressed: () {},
                   child: Text(
                     'About Me',
                     style: TextStyle(
+                      fontFamily: 'Pushster',
+                      fontSize: 20,
                       color: Colors.white,
                     ),
                   ),

@@ -37,6 +37,7 @@ dependencies:
   font_awesome_flutter: ^9.2.0
   getwidget: ^2.0.4
   url_launcher: ^6.0.17
+  google_fonts: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -76,17 +77,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Vujahday
+      fonts:
+        - asset: fonts/VujahdayScript-Regular.ttf
+    - family: Pushster
+      fonts:
+        - asset: fonts/Pushster-Regular.ttf
+        
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
