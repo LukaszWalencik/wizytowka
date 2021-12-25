@@ -21,7 +21,11 @@ class SocialMediaIcons extends StatelessWidget {
           ),
           child: IconButton(
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () async {
+              const twitter_link = 'https://twitter.com/';
+              if (!await launch(twitter_link))
+                throw 'Could not launch $twitter_link';
+            },
             icon: Icon(FontAwesomeIcons.twitter),
           ),
         ),
@@ -33,8 +37,9 @@ class SocialMediaIcons extends StatelessWidget {
           child: IconButton(
             color: Colors.white,
             onPressed: () async {
-              final _url = 'www.facebook.com';
-              if (!await launch('_url')) throw 'Could not launch $_url';
+              const facebook_link = 'https://facebook.com';
+              if (!await launch(facebook_link))
+                throw 'Could not launch $facebook_link';
             },
             icon: Icon(FontAwesomeIcons.facebook),
           ),
@@ -46,7 +51,11 @@ class SocialMediaIcons extends StatelessWidget {
           ),
           child: IconButton(
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () async {
+              const linkedin_link = 'https://linkedin.com/';
+              if (!await launch(linkedin_link))
+                throw 'Could not launch $linkedin_link';
+            },
             icon: Icon(FontAwesomeIcons.linkedin),
           ),
         ),
